@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.big-container{
+    background-attachment: fixed;
+    background-size: contain;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231231/pngtree-vector-texture-maximize-profits-with-online-shopping-sale-marketing-image_13912091.png);
+}
+
+header{
+    top: 0;
+    position: sticky;
+}
+.navbar {
+    background-color: orange;
+    display: flex;
+
+    >h2 {
+        font-size: 30px;
+        margin-left: 100px;
+        margin-top: 28px;
+        cursor: pointer;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    >ul {
+        margin-top: 38px;
+        margin-left: 40px;
+        display: flex;
+        gap: 40px;
+
+        >li {
+            list-style: none;
+
+            >a {
+                text-decoration: none;
+                color: black;
+                font-size: 24px;
+            }
+
+            >a:hover {
+                color: black;
+            }
+
+            >a::after {
+                content: "";
+                display: block;
+                padding-bottom: 0.5rem;
+                border-bottom: 0.1rem solid black;
+                transform: scaleX(0);
+                transition: 0.2s linear;
+            }
+
+            >a:hover::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    >.icons {
+        display: flex;
+        margin-top: 36px;
+        margin-left: 600px;
+        font-size: 30px;
+        gap: 50px;
+        color: black;
+        cursor: pointer;
+
+        >i:hover {
+            color: black;
+        }
+
+        >i::after {
+            content: "";
+            display: block;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.1rem solid black;
+            transform: scaleX(0);
+            transition: 0.2s linear;
+        }
+
+        >i:hover::after {
+            transform: scaleX(1);
+        }
+    }
+}
